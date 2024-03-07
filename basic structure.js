@@ -51,4 +51,5 @@ Barbariancoin.addBlock(new Block(1,"23/02/2024",{amount: 4}));
 Barbariancoin.addBlock(new Block(2,"24/02/2024",{amount: 38}));
 
 console.log(JSON.stringify( Barbariancoin,null,4));//representing our blockchain
-
+// to detect any tampering with the BlockChain
+console.log('is the blockchainvalid ?' +Barbariancoin.isChainValid());
